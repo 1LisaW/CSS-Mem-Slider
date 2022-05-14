@@ -4,9 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS MEM Slider</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
+    <div class="wrapper">
+        <div class="meme-container">
+            <input type="radio" class="radio-holder" name="slides" id="slide-1" checked="checked">
+            <input type="radio" class="radio-holder" name="slides" id="slide-2">
+            <input type="radio" class="radio-holder" name="slides" id="slide-3">
+            <input type="radio" class="radio-holder" name="slides" id="slide-4">
+            <div class="image-wrapper">
+                <div class="image-block">
+                    <img class="meme-image" src="./img/mem1.jpg">
+                </div>
+                <div class="image-block">
+                    <img class="meme-image" src="./img/mem2.jpg">
+                </div>
+                <div class="image-block">
+                    <img class="meme-image" src="./img/mem3.jpg">
+                </div>
+                <div class="image-block">
+                    <img class="meme-image" src="./img/mem4.png">
+                </div>
+            </div>
+            <div class="subimage-container">
+                <div class="labels-container">
+                    <label for="slide-1" id="label-slide-1">
+                    </label>
+                    <label for="slide-2" id="label-slide-2">
+                    </label>
+                    <label for="slide-3" id="label-slide-3">
+                    </label>
+                    <label for="slide-4" id="label-slide-4">
+                    </label>
+                </div>
+                <div class="text-wrapper">
+                    <div class="text-container">
+                        <span class="meme-text">If you're happy...</span>
+                        <span class="meme-text">Hello</span>
+                        <span class="meme-text">When I was your age</span>
+                        <span class="meme-text">Stare Dad Only, dad, stare</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
