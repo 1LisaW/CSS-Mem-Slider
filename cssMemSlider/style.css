@@ -86,3 +86,48 @@ html, body{
     margin: 0px 5vw auto auto;
     color:#FFF;
 }
+.labels-container > label {
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    background-color: #0080FF;
+    margin: 5px;
+    cursor: pointer;
+}
+#slide-1[type="radio"]:checked ~.subimage-container> .labels-container > #label-slide-1,
+#slide-2[type="radio"]:checked ~.subimage-container> .labels-container > #label-slide-2,
+#slide-3[type="radio"]:checked ~.subimage-container> .labels-container > #label-slide-3,
+#slide-4[type="radio"]:checked ~.subimage-container> .labels-container > #label-slide-4 {
+    background: #000 ;
+    height: 16px;
+    width: 16px;
+    display:inline-block;
+    padding: 0 0 0 0px;
+    border: 2.5px solid #FFF;
+}
+#slide-1:checked  ~ .image-wrapper,
+#slide-1:checked  ~ .subimage-container > .text-wrapper > .text-container {
+    margin-left: 0%;
+}
+#slide-2:checked  ~ .image-wrapper,
+#slide-2:checked  ~ .subimage-container > .text-wrapper > .text-container{
+    margin-left: -100%;
+}
+#slide-3:checked  ~ .image-wrapper,
+#slide-3:checked  ~ .subimage-container > .text-wrapper > .text-container{
+    margin-left: -200%;
+}
+#slide-4:checked  ~ .image-wrapper,
+#slide-4:checked  ~ .subimage-container > .text-wrapper > .text-container{
+    margin-left: -300%;
+}
+
+.subimage-container{
+    width: 100%;
+    display: flex;
+}
+.labels-container > label:hover,
+.labels-container > label:focus
+{
+    background-color:#FFF;
+}
