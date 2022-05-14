@@ -46,8 +46,7 @@ html, body{
     display: flex;
     width: 400%;
     align-items: center; 
-    /* margin: 20px 40px; */
-     transition: all 1s ease;
+    transition: all 1s ease;
 }
 
 .labels-container{
@@ -67,7 +66,6 @@ html, body{
     height: 75vh;
     width: 100%;
     align-content: center;
-    /* border-radius: 20px; */
     background-color:#000;
 }
 
@@ -141,7 +139,6 @@ html, body{
     }
     .labels-container{
         margin-top: 5vh;
-        /* justify-content: center; */
     }
     .text-wrapper{
     width: 100%;
