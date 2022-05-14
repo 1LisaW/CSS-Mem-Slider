@@ -131,3 +131,22 @@ html, body{
 {
     background-color:#FFF;
 }
+
+@media (max-width:320px){
+    .image-wrapper, .image-block{
+        height: 50vh;
+    }
+    .subimage-container{
+        flex-direction: column;
+    }
+    .labels-container{
+        margin-top: 5vh;
+        /* justify-content: center; */
+    }
+    .text-wrapper{
+    width: 100%;
+    }
+    .text-container{
+        margin-top: 5vh;
+    }
+}
