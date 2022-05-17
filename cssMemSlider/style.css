@@ -86,18 +86,28 @@ html, body{
     margin: 0 5vw auto auto;
     color:#FFF;
 }
-.labels-container > label {
+.labels-container > label{
+    width: 36rem;
+    height: 36rem;
+    padding:  10rem;
+    display: flex;
+    justify-content: center;
+    align-content:center;
+    cursor: pointer;
+}
+.labels-container > label > .dot {
     width: 16rem;
     height: 16rem;
     border-radius: 8rem;
     background-color: #0080FF;
-    margin: 5rem;
-    cursor: pointer;
+    /* margin: 5rem; */
+    padding: 0 0 0 0;
+    
 }
-#slide-1[type="radio"]:checked ~.subimage-container> .labels-container > #label-slide-1,
-#slide-2[type="radio"]:checked ~.subimage-container> .labels-container > #label-slide-2,
-#slide-3[type="radio"]:checked ~.subimage-container> .labels-container > #label-slide-3,
-#slide-4[type="radio"]:checked ~.subimage-container> .labels-container > #label-slide-4 {
+#slide-1[type="radio"]:checked ~.subimage-container> .labels-container > #label-slide-1 > .dot,
+#slide-2[type="radio"]:checked ~.subimage-container> .labels-container > #label-slide-2 > .dot,
+#slide-3[type="radio"]:checked ~.subimage-container> .labels-container > #label-slide-3 > .dot,
+#slide-4[type="radio"]:checked ~.subimage-container> .labels-container > #label-slide-4 > .dot {
     background: #000 ;
     height: 16rem;
     width: 16rem;
@@ -126,8 +136,8 @@ html, body{
     width: 100%;
     display: flex;
 }
-.labels-container > label:hover,
-.labels-container > label:focus
+.labels-container > label:hover > .dot,
+.labels-container > label:focus > .dot
 {
     background-color:#FFF;
 }
