@@ -141,6 +141,10 @@ html, body{
 {
     background-color:#FFF;
 }
+.labels-container > label:active > .dot
+{
+   box-shadow: #888 2rem 2rem 2rem 2rem;
+}
 
 @media (max-width:320px){
     .image-wrapper, .image-block{
