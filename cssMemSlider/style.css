@@ -150,7 +150,10 @@ html, body{
         flex-direction: column;
     }
     .labels-container{
+        margin: auto;
         margin-top: 5vh;
+        width: 120rem;
+        justify-content:space-between
     }
     .text-wrapper{
     width: 100%;
