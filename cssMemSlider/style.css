@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    line-height: 210%;
 }
 
 html, body{
@@ -156,7 +157,7 @@ html, body{
     .labels-container{
         margin: auto;
         margin-top: 5vh;
-        width: 120rem;
+        width: 150rem;
         justify-content:space-between
     }
     .text-wrapper{
